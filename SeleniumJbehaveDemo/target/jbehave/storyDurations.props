@@ -1,0 +1,6 @@
+#org.jbehave.core.embedder.StoryManager
+#Fri Sep 29 14:50:55 CST 2017
+threads=1
+total=0
+threadAverage=0
+jbehave/test/baidu_search_hello_world_story.story=0
