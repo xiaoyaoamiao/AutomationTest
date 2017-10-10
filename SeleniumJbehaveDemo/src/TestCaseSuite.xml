@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="testdemo">
+	<test name="profile">
+		<classes>
+			<class name="testcase.main.TestBaidu" />
+		</classes>
+	</test>
+</suite>

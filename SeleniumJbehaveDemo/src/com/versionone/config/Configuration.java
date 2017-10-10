@@ -174,7 +174,7 @@ public final class Configuration
      */
     public static String getCopy(final String value)
     {
-    	String property_file = ConfigFiles.COPY_DIR + ConfigFiles.XDisneyInternalPreferredLanguage+".properties";
+    	String property_file = ConfigFiles.COPY_DIR;
         File localConfig = new File(property_file);
         properties = new Properties();
         try

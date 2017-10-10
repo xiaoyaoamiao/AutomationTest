@@ -26,15 +26,10 @@ public final class ConfigFiles
      */
     //public static final String PROFILE_HOST = "https://origin.latest.profile-ui.hkdl.ap-northeast-1.wdpro.disney.com/";
     public static final String PROFILE_HOST = "https://www.baidu.com/";
-    public static final String COPY_DIR = "conf//copies//content.";
+    public static final String COPY_DIR = "conf//copies//content.properties";
     public static final String TESTCASE_CONFIG = "googleXlsTests.properties";
-    public static final String TEST_REPORT = "file:///Users/bmiao/Documents/AutomationStaff/seleniumDemo/SeleniumDemo/test-output/index.html";
+    public static final String TEST_REPORT = "file:////Users/bmiao/Documents/AutomationStaff/selenium/SeleniumJbehaveDemo/AutomationTest/SeleniumJbehaveDemo/test-output/index.html";
     
-    public static final String XDisneyInternalSite = "";
-    public static final String XDisneyInternalSiteRegion = "";
-    public static final String XDisneyInternalPreferredLanguage = "";
-	public static final String XDisneyInternalBaseUrl  = PROFILE_HOST+"";
-
     public static final String PROFILE_LOGIN = PROFILE_HOST;
     /**
      * Hidden constructor.

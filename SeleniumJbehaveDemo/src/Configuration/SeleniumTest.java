@@ -73,7 +73,7 @@ public class SeleniumTest{
 	public WebDriver start(String browser) {
 		
 		this.browser = browser.toLowerCase().trim();
-		this.url = ConfigFiles.XDisneyInternalBaseUrl;
+		this.url = Environment.URL;
 		return visit();
 		
 	}

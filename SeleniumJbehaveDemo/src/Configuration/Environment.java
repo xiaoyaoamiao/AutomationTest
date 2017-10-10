@@ -4,7 +4,7 @@ package Configuration;
 
 public class Environment {
 	public static String URL = "https://www.baidu.com/";
-	public static String language = "zh-hk";
+	public static String language = "";
 	//ff = firefox
 	public static String BROWSER = "ff";
 	public static int WAITTIMESMIN = 5000;
