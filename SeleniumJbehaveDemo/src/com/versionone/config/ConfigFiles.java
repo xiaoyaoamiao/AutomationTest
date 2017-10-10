@@ -30,21 +30,12 @@ public final class ConfigFiles
     public static final String TESTCASE_CONFIG = "googleXlsTests.properties";
     public static final String TEST_REPORT = "file:///Users/bmiao/Documents/AutomationStaff/seleniumDemo/SeleniumDemo/test-output/index.html";
     
-    public static final String XDisneyInternalSite = "HKDL";
-    public static final String XDisneyInternalSiteRegion = "intl";
-    public static final String XDisneyInternalPreferredLanguage = "zh-hk";
-    public static final String XDisneyInternalBaseUrl  = PROFILE_HOST+"/login/";
-    
-    public static final String ACCOUNT_USERNAME_CH_MOBILE  = "15601878280";
-    public static final String ACCOUNT_USERNAME_EMAIL  = "bobby.x.miao.-nd@disney.com";
-    public static final String ACCOUNT_PASSWORD  = "123,aA";
-    public static final String ACCOUNT_FIRSTNAME  = "autoTestFirstname";
-    public static final String ACCOUNT_LASTNAME  = "autoTestLastname";
-    
+    public static final String XDisneyInternalSite = "";
+    public static final String XDisneyInternalSiteRegion = "";
+    public static final String XDisneyInternalPreferredLanguage = "";
+	public static final String XDisneyInternalBaseUrl  = PROFILE_HOST+"";
 
-    public static final String PROFILE_LOGIN = PROFILE_HOST + "/zh-hk/login/";
-    public static final String PROFILE_FORGOTPASSWORD = PROFILE_HOST+"/zh-hk/forgotpassword/";
-    public static final String PROFILE_REGISTRATION = PROFILE_HOST+"/zh-hk/registration/";
+    public static final String PROFILE_LOGIN = PROFILE_HOST;
     /**
      * Hidden constructor.
      */

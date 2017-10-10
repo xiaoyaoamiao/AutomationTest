@@ -92,23 +92,7 @@ public class SeleniumTest{
 		log("Start "+browser+" browser...");
 		log("Environment:  "+url);
 		if (browser.toLowerCase().equals("ff")) {
-//			String profilePath="/Users/bmiao/Library/Application Support/Firefox/Profiles/";//4duhjf19.default
-//            System.out.println("profilePath: "+profilePath);
-//            File checkProfile = new File(profilePath);
-//            File[] allFolder = checkProfile.listFiles();
-//            for (int i = 0; i < allFolder.length; i++) {
-//
-//                if (allFolder[i].getName().endsWith(ConfigFiles.XDisneyInternalPreferredLanguage)) {
-//                    profilePath = profilePath + allFolder[i].getName();
-//                    break;
-//                }
-//            }
-//            FirefoxProfile firefoxprofile = new FirefoxProfile(new File(profilePath));
-//            firefoxprofile.setPreference("X-Disney-Internal-Site", ConfigFiles.XDisneyInternalSite);
-//            firefoxprofile.setPreference("X-Disney-Internal-SiteRegion", ConfigFiles.XDisneyInternalSiteRegion);
-//            firefoxprofile.setPreference("X-Disney-Internal-PreferredLanguage", ConfigFiles.XDisneyInternalPreferredLanguage);
-//            firefoxprofile.setPreference("X-Disney-Internal-BaseUrl", ConfigFiles.XDisneyInternalBaseUrl);
-            driver = new FirefoxDriver();//firefoxprofile
+            driver = new FirefoxDriver();
             
 		} else if (browser.toLowerCase().equals("ie")) {
 			DesiredCapabilities ieCapabilities = DesiredCapabilities.internetExplorer(); 
@@ -1008,7 +992,8 @@ public class SeleniumTest{
     
     public void verifyTitle(String key){
     	try{
-    		String actualTitle = driver.getTitle();
+    		//String actualTitle = driver.getTitle();
+    		String actualTitle = getText(Configuration.getXpath(key,executeClass));
         	String expectedTitle = Configuration.getCopy(key);
     		logWithColor("VerifyTitle expected: "+expectedTitle+" Actually: "+actualTitle);
     		if(!actualTitle.equals(expectedTitle))

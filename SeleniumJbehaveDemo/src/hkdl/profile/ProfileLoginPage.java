@@ -27,12 +27,12 @@ public class ProfileLoginPage  extends SeleniumTest{
 		verifyTitle("hkdl.site.authentication.authentication.login.translation.meta.pageTitle");
 		//check element displays good
 		verifyCopy("login.title");
-		verifyCopy("forms.signIn.emailLabel");   //username
+		verifyCopy("forms.signIn.emailLabel");  //username
 		verifyCopy("forms.password.passwordLabel");//password
 		verifyCopy("login.forgotPassword"); //forgetpassword
 		verifyCopy("signIn.loginName.hint");   //username hint
 		verifyCopy("forms.signIn.rememberMe"); //Remember me checkbox
-		assertEquals(getText(Configuration.getXpath("login.bottom.title"))," "+Configuration.getCopy("login.bottom.title"));
+		assertEquals(getText(Configuration.getXpath("login.bottom.title")),Configuration.getCopy("login.bottom.title"));
 		verifyCopy("login.bottom.description");
 		verifyCopy("signIn.bottom.createAccount");
 		verifyCopy("login.submitButton");
