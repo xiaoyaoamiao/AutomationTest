@@ -25,7 +25,7 @@ public class ProfileLoginPage  extends SeleniumTest{
 		//input hello world and click search button
 		open(ConfigFiles.PROFILE_LOGIN);
 		verifyTitle("hkdl.site.authentication.authentication.login.translation.meta.pageTitle");
-		//check element displays good
+		//check element displays good;
 		verifyCopy("login.title");
 		verifyCopy("forms.signIn.emailLabel");  //username
 		verifyCopy("forms.password.passwordLabel");//password
