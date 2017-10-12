@@ -169,8 +169,12 @@ public class SeleniumTest{
 
 	    try {
 	    	
-	        java.awt.Desktop.getDesktop().browse(new java.net.URI((new File(ConfigFiles.TEST_REPORT)).getAbsolutePath()));
-	    
+	        System.out.print((new File(ConfigFiles.TEST_REPORT)).getAbsolutePath());
+	        String tempurl = "file:///"+ (new File("test-output/index.html")).getAbsolutePath();
+	        if(tempurl.contains("c:"))
+	        	tempurl = tempurl.replace("\\", "/");
+	        java.awt.Desktop.getDesktop().browse(new java.net.URI(tempurl));
+		     
 	    } catch (Exception e) {}
 		
 	}
