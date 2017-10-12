@@ -1,9 +1,11 @@
 package com.versionone.config;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Properties;
 
 import org.testng.Reporter;
@@ -35,51 +37,16 @@ public final class Configuration
     
     private static Properties properties;
 
-    /**
-     * Get a Value from a configuration file.
-     *
-     * @param value The name of the value to look for
-     * @return The value of the variable looked for
-     */
-    public static String getPublicValue(final String value)
-    {
-
-        File localConfig = new File("conf//seleniumConfig.local.properties");
-
-        properties = new Properties();
-        try
-        {
-            if (localConfig.exists())
-            {
-                properties.load(new FileInputStream(
-                        "conf//seleniumConfig.local.properties"));
-            }
-            else
-            {
-                properties.load(new FileInputStream(
-                        "conf//seleniumConfig.properties"));
-            }
-        } catch (FileNotFoundException e)
-        {
-            e.printStackTrace();
-        } catch (IOException e)
-        {
-            e.printStackTrace();
-        }
-        String removeQuotaion = properties.getProperty(value).replace("\"", "");
-        return removeQuotaion;
-    }
-
     public static String getXpath(final String value)
     {
-    	String fileDir = "conf//xpathes//"+executaionProperties+".properties";
+    	String fileDir = ConfigFiles.XPATH_DIR + executaionProperties + ".properties";
         File localConfig = new File(fileDir);
         properties = new Properties();
         try
         {
             if (localConfig.exists())
             {
-                properties.load(new FileInputStream(fileDir));
+                properties.load(new BufferedReader(new InputStreamReader(new FileInputStream(fileDir),"UTF-8")));
             }
         } catch (FileNotFoundException e)
         {
@@ -95,13 +62,13 @@ public final class Configuration
     
     public static String getXpath(final String value, final String file)
     {
-        File localConfig = new File("conf//xpathes//"+file+".properties");
+        File localConfig = new File(ConfigFiles.XPATH_DIR + file + ".properties");
         properties = new Properties();
         try
         {
             if (localConfig.exists())
             {
-                properties.load(new FileInputStream("conf//xpathes//"+file+".properties"));
+                properties.load(new BufferedReader(new InputStreamReader(new FileInputStream(ConfigFiles.XPATH_DIR + file + ".properties"),"UTF-8")));
             }
         } catch (FileNotFoundException e)
         {
@@ -110,8 +77,14 @@ public final class Configuration
         {
             e.printStackTrace();
         }
-        System.out.println("conf//xpathes//"+file+".properties");
-        System.out.println(properties.getProperty(value));
+        
+        if(!properties.containsKey(value))
+        {
+        	Reporter.log("Cannot found key: "+ value);
+        	return "";
+        }
+       
+        Reporter.log("Xpath: " + properties.getProperty(value));
         String removeQuotaion = properties.getProperty(value).replace("\"", "");
         return removeQuotaion;
     }
@@ -123,15 +96,13 @@ public final class Configuration
      * @param value Value to get.
      * @return string value of the Value searched for.
      */
-    public static String getValue(final String configFile, final String value)
+    public static String getValues(final String value, final String configFile)
     {
 
         properties = new Properties();
         try
         {
-
-            properties.load(new FileInputStream("conf//xpathes//" + configFile));
-
+            properties.load(new BufferedReader(new InputStreamReader(new FileInputStream(ConfigFiles.XPATH_DIR + configFile),"UTF-8")));
         } catch (FileNotFoundException e)
         {
             e.printStackTrace();
@@ -139,7 +110,13 @@ public final class Configuration
         {
             e.printStackTrace();
         }
-
+        
+        if(!properties.containsKey(value))
+        {
+        	Reporter.log("Cannot found key: "+ value);
+        	return "";
+        }
+        
         return properties.getProperty(value);
 
     }
@@ -151,8 +128,8 @@ public final class Configuration
         properties = new Properties();
         try
         {
-
-            properties.load(new FileInputStream("conf//xpathes//" + executaionProperties));
+        	
+            properties.load(new BufferedReader(new InputStreamReader(new FileInputStream(ConfigFiles.XPATH_DIR + executaionProperties),"UTF-8")));
 
         } catch (FileNotFoundException e)
         {
@@ -161,7 +138,13 @@ public final class Configuration
         {
             e.printStackTrace();
         }
-
+        
+        if(!properties.containsKey(value))
+        {
+        	Reporter.log("Cannot found key: "+ value);
+        	return "";
+        }
+        
         return properties.getProperty(value);
 
     }
@@ -181,7 +164,7 @@ public final class Configuration
         {
             if (localConfig.exists())
             {
-                properties.load(new FileInputStream(property_file));
+                properties.load(new BufferedReader(new InputStreamReader(new FileInputStream(property_file),"UTF-8")));
             }
         } catch (FileNotFoundException e)
         {

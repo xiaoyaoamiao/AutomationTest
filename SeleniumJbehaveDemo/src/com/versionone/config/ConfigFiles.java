@@ -27,8 +27,9 @@ public final class ConfigFiles
     //public static final String PROFILE_HOST = "https://origin.latest.profile-ui.hkdl.ap-northeast-1.wdpro.disney.com/";
     public static final String PROFILE_HOST = "https://www.baidu.com/";
     public static final String COPY_DIR = "conf//copies//content.properties";
+    public static final String XPATH_DIR = "conf//xpathes//";
     public static final String TESTCASE_CONFIG = "googleXlsTests.properties";
-    public static final String TEST_REPORT = "file:////Users/bmiao/Documents/AutomationStaff/selenium/SeleniumJbehaveDemo/AutomationTest/SeleniumJbehaveDemo/test-output/index.html";
+    public static final String TEST_REPORT = "test-output/index.html";
     
     public static final String PROFILE_LOGIN = PROFILE_HOST;
     /**

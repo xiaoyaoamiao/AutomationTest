@@ -168,7 +168,9 @@ public class SeleniumTest{
 		}
 
 	    try {
-	      java.awt.Desktop.getDesktop().browse(new java.net.URI(ConfigFiles.TEST_REPORT));
+	    	
+	        java.awt.Desktop.getDesktop().browse(new java.net.URI((new File(ConfigFiles.TEST_REPORT)).getAbsolutePath()));
+	    
 	    } catch (Exception e) {}
 		
 	}
