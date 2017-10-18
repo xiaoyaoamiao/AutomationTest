@@ -2,9 +2,9 @@ package testcase.main;
 
 import org.testng.annotations.*;
 
-import com.versionone.config.ConfigFiles;
-import com.versionone.config.Configuration;
-import Configuration.SeleniumTest;
+import com.main.seleniumBase.SeleniumTest;
+import com.versionone.config.EnvArguments;
+import com.versionone.config.ReadProperty;
 
 
 public class ProfileLoginPage  extends SeleniumTest{
@@ -15,7 +15,7 @@ public class ProfileLoginPage  extends SeleniumTest{
 		
 		//Start ff browser and open google page(ff and url are set as default)
 		start();
-		Configuration.setProperties("ProfileLoginPage");
+		ReadProperty.setProperties("ProfileLoginPage");
 	}
 	
 	
@@ -23,7 +23,7 @@ public class ProfileLoginPage  extends SeleniumTest{
 	public void demoTest() {
 		
 		//input hello world and click search button
-		open(ConfigFiles.PROFILE_LOGIN);
+		open(EnvArguments.PROFILE_LOGIN);
 		verifyTitle("hkdl.site.authentication.authentication.login.translation.meta.pageTitle");
 		//check element displays good;
 		verifyCopy("login.title");
@@ -32,7 +32,7 @@ public class ProfileLoginPage  extends SeleniumTest{
 		verifyCopy("login.forgotPassword"); //forgetpassword
 		verifyCopy("signIn.loginName.hint");   //username hint
 		verifyCopy("forms.signIn.rememberMe"); //Remember me checkbox
-		assertEquals(getText(Configuration.getXpath("login.bottom.title")),Configuration.getCopy("login.bottom.title"));
+		assertEquals(getText(ReadProperty.getXpath("login.bottom.title")),ReadProperty.getCopy("login.bottom.title"));
 		verifyCopy("login.bottom.description");
 		verifyCopy("signIn.bottom.createAccount");
 		verifyCopy("login.submitButton");

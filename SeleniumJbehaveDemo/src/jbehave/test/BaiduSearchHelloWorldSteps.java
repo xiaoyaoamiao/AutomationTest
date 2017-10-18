@@ -1,14 +1,15 @@
 package jbehave.test;
 import org.jbehave.core.annotations.*;
-import com.versionone.config.Configuration;
-import Configuration.SeleniumTest;
+
+import com.main.seleniumBase.SeleniumTest;
+import com.versionone.config.ReadProperty;
 
 public class BaiduSearchHelloWorldSteps extends SeleniumTest{
 	
 	@Given("Open Baidu Page")
 	public void givenOpenBaiduPage(){
 		start();
-		Configuration.setProperties("BaiduSearchHelloWorldSteps");
+		ReadProperty.setProperties("BaiduSearchHelloWorldSteps");
 	}
 	
 	@Then("I click search button")
@@ -17,7 +18,7 @@ public class BaiduSearchHelloWorldSteps extends SeleniumTest{
 	}
 	@Then("I can get text $content")
 	public void thenICanGetTextContent(String content){
-		assertEquals(getText(Configuration.getXpath("searchResult.result")),content);
+		assertEquals(getText(ReadProperty.getXpath("searchResult.result")),content);
 	}
 	@When("I enter Hello World in Search Field")
 	public void whenIEnterHelloWorldInSearchField(){

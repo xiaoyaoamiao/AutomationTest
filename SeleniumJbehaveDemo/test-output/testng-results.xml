@@ -2,7 +2,7 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
     <line>
-      <![CDATA[<font color='blue'>Thu Oct 12 16:40:12 CST 2017-- log: </font>]]>
+      <![CDATA[<font color='blue'>Mon Oct 16 15:17:27 CST 2017-- log: </font>]]>
     </line>
     <line>
       <![CDATA[<font color='green'>TestBaidu</font>]]>
@@ -17,7 +17,7 @@
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Thu Oct 12 16:40:12 CST 2017-- log: </font>]]>
+      <![CDATA[<font color='blue'>Mon Oct 16 15:17:27 CST 2017-- log: </font>]]>
     </line>
     <line>
       <![CDATA[<font color='green'>Start ff browser...</font>]]>
@@ -26,7 +26,7 @@
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Thu Oct 12 16:40:12 CST 2017-- log: </font>]]>
+      <![CDATA[<font color='blue'>Mon Oct 16 15:17:27 CST 2017-- log: </font>]]>
     </line>
     <line>
       <![CDATA[<font color='green'>Environment:  https://www.baidu.com/</font>]]>
@@ -35,7 +35,7 @@
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Thu Oct 12 16:40:14 CST 2017-- log: </font>]]>
+      <![CDATA[<font color='blue'>Mon Oct 16 15:17:30 CST 2017-- log: </font>]]>
     </line>
     <line>
       <![CDATA[<font color='green'>Check url are available</font>]]>
@@ -44,7 +44,7 @@
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Thu Oct 12 16:40:14 CST 2017-- log: </font>]]>
+      <![CDATA[<font color='blue'>Mon Oct 16 15:17:30 CST 2017-- log: </font>]]>
     </line>
     <line>
       <![CDATA[<font color='green'>URL:https://www.baidu.com/</font>]]>
@@ -53,7 +53,7 @@
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Thu Oct 12 16:40:17 CST 2017-- log: </font>]]>
+      <![CDATA[<font color='blue'>Mon Oct 16 15:17:37 CST 2017-- log: </font>]]>
     </line>
     <line>
       <![CDATA[<font color='green'>Sleeping 5000ms</font>]]>
@@ -62,7 +62,7 @@
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Thu Oct 12 16:40:22 CST 2017-- log: </font>]]>
+      <![CDATA[<font color='blue'>Mon Oct 16 15:17:42 CST 2017-- log: </font>]]>
     </line>
     <line>
       <![CDATA[<font color='green'>open https://www.baidu.com/</font>]]>
@@ -74,10 +74,10 @@
       <![CDATA[Xpath: kw]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Thu Oct 12 16:40:23 CST 2017-- log: </font>]]>
+      <![CDATA[<font color='blue'>Mon Oct 16 15:17:43 CST 2017-- log: </font>]]>
     </line>
     <line>
-      <![CDATA[<font color='green'>Type: accenture to field: [[FirefoxDriver: firefox on MAC (8f70f5b8-b681-cd45-b37f-684618bdeb05)] -> id: kw]</font>]]>
+      <![CDATA[<font color='green'>Type: accenture to field: [[FirefoxDriver: firefox on MAC (c407cfdd-68c5-ec4f-a5a6-eea61c59724b)] -> id: kw]</font>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
@@ -86,7 +86,7 @@
       <![CDATA[Xpath: su]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Thu Oct 12 16:40:25 CST 2017-- log: </font>]]>
+      <![CDATA[<font color='blue'>Mon Oct 16 15:17:45 CST 2017-- log: </font>]]>
     </line>
     <line>
       <![CDATA[<font color='green'>size 1</font>]]>
@@ -95,10 +95,10 @@
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Thu Oct 12 16:40:25 CST 2017-- log: </font>]]>
+      <![CDATA[<font color='blue'>Mon Oct 16 15:17:45 CST 2017-- log: </font>]]>
     </line>
     <line>
-      <![CDATA[<font color='green'>click [[FirefoxDriver: firefox on MAC (8f70f5b8-b681-cd45-b37f-684618bdeb05)] -> id: su]</font>]]>
+      <![CDATA[<font color='green'>click [[FirefoxDriver: firefox on MAC (c407cfdd-68c5-ec4f-a5a6-eea61c59724b)] -> id: su]</font>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
@@ -107,7 +107,7 @@
       <![CDATA[Xpath: //div[@class='nums']]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Thu Oct 12 16:40:31 CST 2017-- log: </font>]]>
+      <![CDATA[<font color='blue'>Mon Oct 16 15:17:53 CST 2017-- log: </font>]]>
     </line>
     <line>
       <![CDATA[<font color='green'>get text://div[@class='nums']</font>]]>
@@ -116,28 +116,28 @@
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Thu Oct 12 16:40:31 CST 2017-- log: </font>]]>
+      <![CDATA[<font color='blue'>Mon Oct 16 15:17:53 CST 2017-- log: </font>]]>
     </line>
     <line>
       <![CDATA[<font color='green'>Text:搜索工具
-百度为您找到相关结果约2,300,000个</font>]]>
+百度为您找到相关结果约2,370,000个</font>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Thu Oct 12 16:40:32 CST 2017-- log: </font>]]>
+      <![CDATA[<font color='blue'>Mon Oct 16 15:17:54 CST 2017-- log: </font>]]>
     </line>
     <line>
       <![CDATA[<font color='red'>VerifyCopy expected: 搜索工具
 百度为您找到相关结果约2,330,000个 Actually: 搜索工具
-百度为您找到相关结果约2,300,000个</font>]]>
+百度为您找到相关结果约2,370,000个</font>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Thu Oct 12 16:40:33 CST 2017-- log: </font>]]>
+      <![CDATA[<font color='blue'>Mon Oct 16 15:17:54 CST 2017-- log: </font>]]>
     </line>
     <line>
       <![CDATA[<font color='red'>Script Failed....</font>]]>
@@ -146,16 +146,16 @@
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Thu Oct 12 16:40:33 CST 2017-- log: </font>]]>
+      <![CDATA[<font color='blue'>Mon Oct 16 15:17:54 CST 2017-- log: </font>]]>
     </line>
     <line>
-      <![CDATA[<font color='red'>Screen shot: Screenshot/TestBaidu/ThuOct12164033CST2017.png</font>]]>
+      <![CDATA[<font color='red'>Screen shot: Screenshot/TestBaidu/MonOct16151754CST2017.png</font>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
     </line>
     <line>
-      <![CDATA[<font color='blue'>Thu Oct 12 16:40:33 CST 2017-- log: </font>]]>
+      <![CDATA[<font color='blue'>Mon Oct 16 15:17:54 CST 2017-- log: </font>]]>
     </line>
     <line>
       <![CDATA[<font color='green'>Close Browser</font>]]>
@@ -170,15 +170,15 @@
       <![CDATA[<br>]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21385" started-at="2017-10-12T08:40:12Z" finished-at="2017-10-12T08:40:33Z">
+  <suite name="testdemo" duration-ms="27208" started-at="2017-10-16T07:17:27Z" finished-at="2017-10-16T07:17:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21385" started-at="2017-10-12T08:40:12Z" finished-at="2017-10-12T08:40:33Z">
+    <test name="profile" duration-ms="27208" started-at="2017-10-16T07:17:27Z" finished-at="2017-10-16T07:17:54Z">
       <class name="testcase.main.TestBaidu">
-        <test-method status="PASS" signature="setup()[pri:0, instance:testcase.main.TestBaidu@369f73a2]" name="setup" is-config="true" duration-ms="10465" started-at="2017-10-12T16:40:12Z" finished-at="2017-10-12T16:40:22Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcase.main.TestBaidu@369f73a2]" name="setup" is-config="true" duration-ms="14747" started-at="2017-10-16T15:17:27Z" finished-at="2017-10-16T15:17:42Z">
           <reporter-output>
             <line>
-              <![CDATA[<font color='blue'>Thu Oct 12 16:40:12 CST 2017-- log: </font>]]>
+              <![CDATA[<font color='blue'>Mon Oct 16 15:17:27 CST 2017-- log: </font>]]>
             </line>
             <line>
               <![CDATA[<font color='green'>TestBaidu</font>]]>
@@ -193,7 +193,7 @@
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Thu Oct 12 16:40:12 CST 2017-- log: </font>]]>
+              <![CDATA[<font color='blue'>Mon Oct 16 15:17:27 CST 2017-- log: </font>]]>
             </line>
             <line>
               <![CDATA[<font color='green'>Start ff browser...</font>]]>
@@ -202,7 +202,7 @@
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Thu Oct 12 16:40:12 CST 2017-- log: </font>]]>
+              <![CDATA[<font color='blue'>Mon Oct 16 15:17:27 CST 2017-- log: </font>]]>
             </line>
             <line>
               <![CDATA[<font color='green'>Environment:  https://www.baidu.com/</font>]]>
@@ -211,7 +211,7 @@
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Thu Oct 12 16:40:14 CST 2017-- log: </font>]]>
+              <![CDATA[<font color='blue'>Mon Oct 16 15:17:30 CST 2017-- log: </font>]]>
             </line>
             <line>
               <![CDATA[<font color='green'>Check url are available</font>]]>
@@ -220,7 +220,7 @@
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Thu Oct 12 16:40:14 CST 2017-- log: </font>]]>
+              <![CDATA[<font color='blue'>Mon Oct 16 15:17:30 CST 2017-- log: </font>]]>
             </line>
             <line>
               <![CDATA[<font color='green'>URL:https://www.baidu.com/</font>]]>
@@ -229,7 +229,7 @@
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Thu Oct 12 16:40:17 CST 2017-- log: </font>]]>
+              <![CDATA[<font color='blue'>Mon Oct 16 15:17:37 CST 2017-- log: </font>]]>
             </line>
             <line>
               <![CDATA[<font color='green'>Sleeping 5000ms</font>]]>
@@ -239,20 +239,20 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="demoTest()[pri:0, instance:testcase.main.TestBaidu@369f73a2]" name="demoTest" duration-ms="10887" started-at="2017-10-12T16:40:22Z" finished-at="2017-10-12T16:40:33Z">
+        <test-method status="FAIL" signature="demoTest()[pri:0, instance:testcase.main.TestBaidu@369f73a2]" name="demoTest" duration-ms="12424" started-at="2017-10-16T15:17:42Z" finished-at="2017-10-16T15:17:54Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected:<搜索工具
 百度为您找到相关结果约2,330,000个> but was:<搜索工具
-百度为您找到相关结果约2,300,000个>]]>
+百度为您找到相关结果约2,370,000个>]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: expected:<搜索工具
 百度为您找到相关结果约2,330,000个> but was:<搜索工具
-百度为您找到相关结果约2,300,000个>
+百度为您找到相关结果约2,370,000个>
 	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
 	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:108)
-	at Configuration.SeleniumTest.verifyCopy(SeleniumTest.java:1906)
+	at Configuration.SeleniumTest.verifyCopy(SeleniumTest.java:1905)
 	at testcase.main.TestBaidu.demoTest(TestBaidu.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -284,7 +284,7 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[<font color='blue'>Thu Oct 12 16:40:22 CST 2017-- log: </font>]]>
+              <![CDATA[<font color='blue'>Mon Oct 16 15:17:42 CST 2017-- log: </font>]]>
             </line>
             <line>
               <![CDATA[<font color='green'>open https://www.baidu.com/</font>]]>
@@ -296,10 +296,10 @@
               <![CDATA[Xpath: kw]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Thu Oct 12 16:40:23 CST 2017-- log: </font>]]>
+              <![CDATA[<font color='blue'>Mon Oct 16 15:17:43 CST 2017-- log: </font>]]>
             </line>
             <line>
-              <![CDATA[<font color='green'>Type: accenture to field: [[FirefoxDriver: firefox on MAC (8f70f5b8-b681-cd45-b37f-684618bdeb05)] -> id: kw]</font>]]>
+              <![CDATA[<font color='green'>Type: accenture to field: [[FirefoxDriver: firefox on MAC (c407cfdd-68c5-ec4f-a5a6-eea61c59724b)] -> id: kw]</font>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
@@ -308,7 +308,7 @@
               <![CDATA[Xpath: su]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Thu Oct 12 16:40:25 CST 2017-- log: </font>]]>
+              <![CDATA[<font color='blue'>Mon Oct 16 15:17:45 CST 2017-- log: </font>]]>
             </line>
             <line>
               <![CDATA[<font color='green'>size 1</font>]]>
@@ -317,10 +317,10 @@
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Thu Oct 12 16:40:25 CST 2017-- log: </font>]]>
+              <![CDATA[<font color='blue'>Mon Oct 16 15:17:45 CST 2017-- log: </font>]]>
             </line>
             <line>
-              <![CDATA[<font color='green'>click [[FirefoxDriver: firefox on MAC (8f70f5b8-b681-cd45-b37f-684618bdeb05)] -> id: su]</font>]]>
+              <![CDATA[<font color='green'>click [[FirefoxDriver: firefox on MAC (c407cfdd-68c5-ec4f-a5a6-eea61c59724b)] -> id: su]</font>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
@@ -329,7 +329,7 @@
               <![CDATA[Xpath: //div[@class='nums']]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Thu Oct 12 16:40:31 CST 2017-- log: </font>]]>
+              <![CDATA[<font color='blue'>Mon Oct 16 15:17:53 CST 2017-- log: </font>]]>
             </line>
             <line>
               <![CDATA[<font color='green'>get text://div[@class='nums']</font>]]>
@@ -338,28 +338,28 @@
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Thu Oct 12 16:40:31 CST 2017-- log: </font>]]>
+              <![CDATA[<font color='blue'>Mon Oct 16 15:17:53 CST 2017-- log: </font>]]>
             </line>
             <line>
               <![CDATA[<font color='green'>Text:搜索工具
-百度为您找到相关结果约2,300,000个</font>]]>
+百度为您找到相关结果约2,370,000个</font>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Thu Oct 12 16:40:32 CST 2017-- log: </font>]]>
+              <![CDATA[<font color='blue'>Mon Oct 16 15:17:54 CST 2017-- log: </font>]]>
             </line>
             <line>
               <![CDATA[<font color='red'>VerifyCopy expected: 搜索工具
 百度为您找到相关结果约2,330,000个 Actually: 搜索工具
-百度为您找到相关结果约2,300,000个</font>]]>
+百度为您找到相关结果约2,370,000个</font>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Thu Oct 12 16:40:33 CST 2017-- log: </font>]]>
+              <![CDATA[<font color='blue'>Mon Oct 16 15:17:54 CST 2017-- log: </font>]]>
             </line>
             <line>
               <![CDATA[<font color='red'>Script Failed....</font>]]>
@@ -368,16 +368,16 @@
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Thu Oct 12 16:40:33 CST 2017-- log: </font>]]>
+              <![CDATA[<font color='blue'>Mon Oct 16 15:17:54 CST 2017-- log: </font>]]>
             </line>
             <line>
-              <![CDATA[<font color='red'>Screen shot: Screenshot/TestBaidu/ThuOct12164033CST2017.png</font>]]>
+              <![CDATA[<font color='red'>Screen shot: Screenshot/TestBaidu/MonOct16151754CST2017.png</font>]]>
             </line>
             <line>
               <![CDATA[<br>]]>
             </line>
             <line>
-              <![CDATA[<font color='blue'>Thu Oct 12 16:40:33 CST 2017-- log: </font>]]>
+              <![CDATA[<font color='blue'>Mon Oct 16 15:17:54 CST 2017-- log: </font>]]>
             </line>
             <line>
               <![CDATA[<font color='green'>Close Browser</font>]]>
@@ -393,11 +393,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- demoTest -->
-        <test-method status="PASS" signature="end()[pri:0, instance:testcase.main.TestBaidu@369f73a2]" name="end" is-config="true" duration-ms="15" started-at="2017-10-12T16:40:33Z" finished-at="2017-10-12T16:40:33Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:testcase.main.TestBaidu@369f73a2]" name="end" is-config="true" duration-ms="19" started-at="2017-10-16T15:17:54Z" finished-at="2017-10-16T15:17:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
       </class> <!-- testcase.main.TestBaidu -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- profile -->
+  </suite> <!-- testdemo -->
 </testng-results>

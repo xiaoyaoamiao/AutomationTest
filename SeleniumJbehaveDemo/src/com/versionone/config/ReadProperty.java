@@ -16,13 +16,13 @@ import org.testng.Reporter;
  * @author Brautigam Gergely
  *
  */
-public final class Configuration
+public final class ReadProperty
 {
 
     /**
      * Private constructor of Configuration class.
      */
-    private Configuration()
+    private ReadProperty()
     {
 
     }
@@ -39,7 +39,7 @@ public final class Configuration
 
     public static String getXpath(final String value)
     {
-    	String fileDir = ConfigFiles.XPATH_DIR + executaionProperties + ".properties";
+    	String fileDir = EnvArguments.XPATH_DIR + executaionProperties + ".properties";
         File localConfig = new File(fileDir);
         properties = new Properties();
         try
@@ -62,13 +62,13 @@ public final class Configuration
     
     public static String getXpath(final String value, final String file)
     {
-        File localConfig = new File(ConfigFiles.XPATH_DIR + file + ".properties");
+        File localConfig = new File(EnvArguments.XPATH_DIR + file + ".properties");
         properties = new Properties();
         try
         {
             if (localConfig.exists())
             {
-                properties.load(new BufferedReader(new InputStreamReader(new FileInputStream(ConfigFiles.XPATH_DIR + file + ".properties"),"UTF-8")));
+                properties.load(new BufferedReader(new InputStreamReader(new FileInputStream(EnvArguments.XPATH_DIR + file + ".properties"),"UTF-8")));
             }
         } catch (FileNotFoundException e)
         {
@@ -102,7 +102,7 @@ public final class Configuration
         properties = new Properties();
         try
         {
-            properties.load(new BufferedReader(new InputStreamReader(new FileInputStream(ConfigFiles.XPATH_DIR + configFile),"UTF-8")));
+            properties.load(new BufferedReader(new InputStreamReader(new FileInputStream(EnvArguments.XPATH_DIR + configFile),"UTF-8")));
         } catch (FileNotFoundException e)
         {
             e.printStackTrace();
@@ -129,7 +129,7 @@ public final class Configuration
         try
         {
         	
-            properties.load(new BufferedReader(new InputStreamReader(new FileInputStream(ConfigFiles.XPATH_DIR + executaionProperties),"UTF-8")));
+            properties.load(new BufferedReader(new InputStreamReader(new FileInputStream(EnvArguments.XPATH_DIR + executaionProperties),"UTF-8")));
 
         } catch (FileNotFoundException e)
         {
@@ -157,7 +157,7 @@ public final class Configuration
      */
     public static String getCopy(final String value)
     {
-    	String property_file = ConfigFiles.COPY_DIR;
+    	String property_file = EnvArguments.COPY_DIR;
         File localConfig = new File(property_file);
         properties = new Properties();
         try

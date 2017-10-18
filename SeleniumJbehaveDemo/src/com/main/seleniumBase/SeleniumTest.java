@@ -1,4 +1,4 @@
-package Configuration;
+package com.main.seleniumBase;
 
 
 
@@ -19,7 +19,6 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -34,8 +33,8 @@ import org.openqa.selenium.Point;
 import org.openqa.selenium.TakesScreenshot; 
 import org.testng.Reporter;
 
-import com.versionone.config.ConfigFiles;
-import com.versionone.config.Configuration;
+import com.versionone.config.ReadProperty;
+import com.versionone.config.Environment;
 
 public class SeleniumTest{
 	
@@ -227,7 +226,7 @@ public class SeleniumTest{
     }
     
     public void click(String key) {
-    	String xpath = Configuration.getXpath(key,executeClass);
+    	String xpath = ReadProperty.getXpath(key,executeClass);
     	try {
     		List<WebElement> elements = null;
     		if (driver.findElements(By.xpath(xpath)).size() == 1){
@@ -670,7 +669,7 @@ public class SeleniumTest{
     
     public void enter(String key, String testdata) {      	
     	try {
-    		String xpath = Configuration.getXpath(key,executeClass);
+    		String xpath = ReadProperty.getXpath(key,executeClass);
     		List<WebElement> elements = null;
     		if (driver.findElements(By.xpath(xpath)).size() == 1){
     			elements = driver.findElements(By.xpath(xpath));
@@ -998,8 +997,8 @@ public class SeleniumTest{
     public void verifyTitle(String key){
     	try{
     		//String actualTitle = driver.getTitle();
-    		String actualTitle = getText(Configuration.getXpath(key,executeClass));
-        	String expectedTitle = Configuration.getCopy(key);
+    		String actualTitle = getText(ReadProperty.getXpath(key,executeClass));
+        	String expectedTitle = ReadProperty.getCopy(key);
     		logWithColor("VerifyTitle expected: "+expectedTitle+" Actually: "+actualTitle);
     		if(!actualTitle.equals(expectedTitle))
     		{
@@ -1083,7 +1082,7 @@ public class SeleniumTest{
     
     public String getTextByKey(String key) {   
     	
-    	String xpath = Configuration.getXpath(key,executeClass);
+    	String xpath = ReadProperty.getXpath(key,executeClass);
         try{
         	List<WebElement> elements = null;
     		if (driver.findElements(By.xpath(xpath)).size() == 1){
@@ -1304,7 +1303,7 @@ public class SeleniumTest{
     	if(items.length>0){
     		expectedItems = "";
     		for(String temp: items){
-    			expectedItems += Configuration.getCopy(temp);
+    			expectedItems += ReadProperty.getCopy(temp);
     		}
     	}
     	
@@ -1431,7 +1430,7 @@ public class SeleniumTest{
     public boolean isTextPresentInElement(String text, String key) {  
     	
     	log("is Text Present? "+text);
-    	String xpath = Configuration.getXpath(key, executeClass);
+    	String xpath = ReadProperty.getXpath(key, executeClass);
     	try{
         	List<WebElement> elements = null;
     		if (driver.findElements(By.xpath(xpath)).size() == 1){
@@ -1816,7 +1815,7 @@ public class SeleniumTest{
     
     public void clickAndWaitPageLoad(String key) {
     	try {
-    		String xpath = Configuration.getXpath(key,executeClass);
+    		String xpath = ReadProperty.getXpath(key,executeClass);
     		List<WebElement> elements = null;
     		if (driver.findElements(By.xpath(xpath)).size() == 1){
     			elements = driver.findElements(By.xpath(xpath));
@@ -1896,8 +1895,8 @@ public class SeleniumTest{
     
     public void verifyCopy(String key)
     {
-    	String actualCopy = getText(Configuration.getXpath(key,executeClass));
-    	String expectedCopy = Configuration.getCopy(key);
+    	String actualCopy = getText(ReadProperty.getXpath(key,executeClass));
+    	String expectedCopy = ReadProperty.getCopy(key);
     	logWithColor("VerifyCopy expected: "+expectedCopy+" Actually: "+actualCopy);
 		if(!actualCopy.equals(expectedCopy))
 		{
@@ -1908,7 +1907,7 @@ public class SeleniumTest{
     
     public void verifyCopy(String key, String text)
     {
-    	String actualCopy = getText(Configuration.getXpath(key,executeClass));
+    	String actualCopy = getText(ReadProperty.getXpath(key,executeClass));
     	String expectedCopy = text;
     	logWithColor("VerifyCopy expected: "+expectedCopy+" Actually: "+actualCopy);
 		if(!actualCopy.equals(expectedCopy))
@@ -1920,7 +1919,7 @@ public class SeleniumTest{
     
     public void verifyElement(String key)
     {
-    	String xpath = Configuration.getXpath(key,executeClass);
+    	String xpath = ReadProperty.getXpath(key,executeClass);
     	try{
         	List<WebElement> elements = null;
     		if (driver.findElements(By.xpath(xpath)).size() == 1){

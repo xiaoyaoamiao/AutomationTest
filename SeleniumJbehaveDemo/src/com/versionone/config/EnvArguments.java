@@ -3,13 +3,11 @@
  */
 package com.versionone.config;
 
-import Configuration.Environment;
-
 /**
  * @author hannibal
  *
  */
-public final class ConfigFiles
+public final class EnvArguments
 {
     /**
      * Selenium Config File Name.
@@ -35,7 +33,7 @@ public final class ConfigFiles
     /**
      * Hidden constructor.
      */
-    private ConfigFiles()
+    private EnvArguments()
     {
 
     }

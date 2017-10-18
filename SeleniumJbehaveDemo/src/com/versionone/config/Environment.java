@@ -1,4 +1,4 @@
-package Configuration;
+package com.versionone.config;
 
 
 

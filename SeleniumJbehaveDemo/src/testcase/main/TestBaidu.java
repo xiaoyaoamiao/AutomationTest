@@ -2,9 +2,9 @@ package testcase.main;
 
 import org.testng.annotations.*;
 
-import com.versionone.config.ConfigFiles;
-import com.versionone.config.Configuration;
-import Configuration.SeleniumTest;
+import com.main.seleniumBase.SeleniumTest;
+import com.versionone.config.EnvArguments;
+import com.versionone.config.ReadProperty;
 
 
 public class TestBaidu  extends SeleniumTest{
@@ -15,14 +15,14 @@ public class TestBaidu  extends SeleniumTest{
 		
 		//Start ff browser and open google page(ff and url are set as default)
 		start();
-		Configuration.setProperties("TestBaidu");
+		ReadProperty.setProperties("TestBaidu");
 	}
 	
 	
 	@Test
 	public void demoTest() {
 		
-		open(ConfigFiles.PROFILE_LOGIN);
+		open(EnvArguments.PROFILE_LOGIN);
 		//verifyTitle("baidu.title");
 		//verifyCopy("baidu.news");
 		enter("baidu.searchfield","accenture");
