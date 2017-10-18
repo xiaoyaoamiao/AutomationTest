@@ -32,7 +32,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Point;  
 import org.openqa.selenium.TakesScreenshot; 
 import org.testng.Reporter;
-
 import com.versionone.config.ReadProperty;
 import com.versionone.config.Environment;
 
@@ -759,7 +758,28 @@ public class SeleniumTest{
     		takeScreenShot(e);
     	}
     } 
-      
+    
+    public void select(String key, String optionValue) {
+		String xpath = ReadProperty.getXpath(key, executeClass);
+		try {
+			List<WebElement> elements = null;
+			if (driver.findElements(By.xpath(xpath)).size() == 1) {
+				elements = driver.findElements(By.xpath(xpath));
+			} else if (driver.findElements(By.id(xpath)).size() == 1) {
+				elements = driver.findElements(By.id(xpath));
+			} else if (driver.findElements(By.name(xpath)).size() == 1) {
+				elements = driver.findElements(By.name(xpath));
+			}
+			if (elements.size() == 1) {
+				log("check " + elements.get(0).toString());
+				log("select " + elements.get(0).toString() + " value:" + optionValue);
+				new Select(elements.get(0)).selectByValue(optionValue);
+			}
+		} catch (Exception e) {
+			takeScreenShot(e);
+		}
+	}
+    
     public void select(By by,String optionValue) {
     	try{
     		log("select "+by.toString()+" value:"+optionValue);
